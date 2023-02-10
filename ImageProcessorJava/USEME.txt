@@ -1,0 +1,48 @@
+
+HOW TO USE:
+Run this program with no commandline arguments to run it in a GUI format:
+    Use the load button to load an image to the GUI.
+    Use the dropdown selector to select the current image to operate on
+    Select an operation and assign it a reference name in the text field
+    Use the apply operation button to apply that operation to the image
+    Use save and quit the gui program to save your image as a file
+Run this program with command line argument: "-file path-of-script-file"
+    This runs the program of the script given by path
+    An example script is shown below
+Run this program with command line argument: "-text"
+    This runs the program in the interactive text mode
+    It can be navigated with the following instructions:
+        You must load an image as the first command.
+        All commands are listed below.
+        [reference name] is the name you will use to refer to the resulting image
+        [original reference name] is the name of the image you are modifying
+        [file-to-load] is the name of the file you are loading Ex. image.jpg
+        [destination-name] is the name of the file as you would like to save it Ex. image.ppm
+        You must quit at the end of the program.
+
+        Ex of a valid script:
+        help
+        load image threebythree.ppm
+        red-component red image
+        green-component green image
+        blue-component blue image
+        save red red.ppm
+        quit
+
+        Commands:
+        help - shows all commands
+        load [reference name] [file-to-load] - loads the file which can be referred to as the reference name
+        save [reference name] [destination-name] - saves the file with the reference name to the destination
+        red-component [reference name] [original reference name] - visualize the original as a greyscale with red values
+        green-component [reference name] [original reference name] - visualize the original as a greyscale with green values
+        blue-component [reference name] [original reference name] - visualize the original as a greyscale with blue values
+        value-component [reference name] [original reference name] - visualize the original as a greyscale with max rgb value of each pixel
+        intensity-component [reference name] [original reference name] - visualize the original as a greyscale with the average rgb value of each pixel
+        luma-component [reference name] [original reference name] - visualize the original as a greyscale luma image
+        horizontal-flip [reference name] [original reference name] - flips the image horizontally
+        vertical-flip [reference name] [original reference name] - flips the image vertically
+        brighten [reference name] [increment value] [original reference name] - brightens or darkens the image by the given value
+        blur [reference name] [original reference name] - blurs the image
+        sharpen [reference name] [original reference name] - sharpens the image
+        grayscale [reference name] [original reference name] - visualizes the original as a luma greyscale
+        sepia [reference name] [original reference name] - visualizes the image as sepia

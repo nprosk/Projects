@@ -1,0 +1,48 @@
+load image threebythree.ppm
+red-component red image
+green-component green image
+blue-component blue image
+value-component value image
+intensity-component intensity image
+luma-component luma image
+horizontal-flip horizontal image
+vertical-flip vertical image
+brighten bright 100 image
+blur blur image
+sharpen sharp image
+grayscale grayscale luma
+sepia sepia red
+save red red.ppm
+save horizontal horizontal.jpg
+save vertical vertical.png
+save luma luma.bmp
+help
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
